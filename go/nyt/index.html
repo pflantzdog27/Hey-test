@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Opening The New York Times</title>
+<style>body{font:17px/1.5 -apple-system,system-ui,sans-serif;margin:0;padding:32px 20px;background:#1c211d;color:#ece9e0}a{color:#8fe6a4}p{max-width:36ch}</style>
+</head><body>
+<p id="msg">Opening The New York Times…</p>
+<p><a id="link" href="https://www.nytimes.com/">Tap here if nothing happens</a></p>
+<p style="opacity:.6;font-size:14px">Opens the Times app when it is installed, otherwise nytimes.com. Having articles read aloud is the app&#39;s own feature, not something this page can start.</p>
+<script>
+(function () {
+  var t = {"ios":"nytimes://","android":"https://www.nytimes.com/","web":"https://www.nytimes.com/"};
+  var ua = navigator.userAgent;
+  var p = /iPhone|iPad|iPod/i.test(ua) ? 'ios' : /Android/i.test(ua) ? 'android' : 'other';
+  var href = (p === 'ios' && t.ios) || (p === 'android' && t.android) || t.web;
+  if (!href) { document.getElementById('msg').textContent = "The New York Times" + ' opens from a phone.'; return; }
+  document.getElementById('link').href = href;
+  location.href = href;
+  if (t.web && href !== t.web) setTimeout(function () { if (!document.hidden) location.href = t.web; }, 1600);
+})();
+</script>
+</body></html>

@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hey — say the word</title>
+<meta name="description" content="A spoken phrase book for your phone. Say “Hey Claude” and Claude opens; say “Hey Maker” and describe an app, and one is made for you that deletes itself when you are done with it.">
+<link rel="canonical" href="https://pflantzdog27.github.io/hey-test/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hey — say the word">
+<meta property="og:description" content="A spoken phrase book for your phone. Say “Hey Claude” and Claude opens; say “Hey Maker” and describe an app, and one is made for you that deletes itself when you are done with it.">
+<meta property="og:url" content="https://pflantzdog27.github.io/hey-test/">
+
+<meta name="twitter:card" content="summary">
+
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1c211d">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f2ea">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<script>/* Runs before first paint so a returning visitor never sees the wrong theme
+   flash. Kept deliberately tiny — its SHA-256 is baked into the CSP at build
+   time, so every byte here is load-bearing. */
+try{var t=localStorage.getItem('lab.theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&amp;family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap">
+<link rel="stylesheet" href="assets/hey.b710f0da8b.css">
+<script src="assets/hey.450ac1e7c8.js" defer></script>
+
+<link rel="manifest" href="manifest.webmanifest" />
+</head>
+<body>
+
+      <a class="skip-link" href="#main">Skip to content</a>
+      <header class="site-nav">
+    <div class="frame nav-inner">
+      <a href="./" class="nav-mark">
+        <span class="nav-mark-name">hey</span
+        ><span class="nav-mark-cursor" aria-hidden="true"></span>
+        <span class="nav-mark-tag">say the word</span>
+      </a>
+      <nav class="nav-links" aria-label="Site">
+        <a href="./" class="nav-link" aria-current="page"
+      >listen</a
+    > <a href="make" class="nav-link" 
+      >make</a
+    > <a href="how" class="nav-link" 
+      >how</a
+    >
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle color theme">
+          lights
+        </button>
+      </nav>
+    </div>
+  </header>
+      <main id="main"><div class="frame"><p class="notice mono" role="status">Test copy on GitHub Pages. The listener and phrases are the real code. The maker is switched off here because it needs the server; "Hey Maker" shows what it heard and stops.</p></div>
+      
+
+      <section class="frame hero">
+        <p class="eyebrow">hey · a spoken phrase book</p>
+        <h1 class="hero-title">Say the word.</h1>
+        <p class="hero-lede">A spoken phrase book for your phone. Say “Hey Claude” and Claude opens; say “Hey Maker” and describe an app, and one is made for you that deletes itself when you are done with it.</p>
+      </section>
+
+      <section class="frame band band--first" aria-labelledby="listen-h">
+        <div class="listen panel" data-listener>
+          <div class="panel-head">
+            <span id="listen-h">listen</span>
+            <label class="speak-toggle"><input type="checkbox" data-speak checked /> say it back</label>
+          </div>
+          <div class="panel-body listen-body">
+            <button type="button" class="mic" data-listen aria-pressed="false" disabled>
+              <span class="mic-ring" aria-hidden="true"></span>
+              <span class="mic-label">Tap, then talk</span>
+            </button>
+            <p class="listen-status mono" data-status aria-live="polite">
+              Voice needs JavaScript and a browser that can hear (Safari on iPhone, Chrome on Android).
+              Every phrase below also works with a tap.
+            </p>
+            <p class="listen-heard" data-heard aria-live="polite" hidden></p>
+          </div>
+        </div>
+
+        <div class="panel make-ask" data-make-panel hidden>
+          <div class="panel-head"><span>hey maker</span><button type="button" class="btn btn--ghost" data-make-cancel>cancel</button></div>
+          <div class="panel-body">
+            <p class="make-ask-brief">“<span data-make-heard></span>”</p>
+            <p class="mono">Delete it in how many days? Say a number, or tap one.</p>
+            <p class="days-row">
+              <button type="button" class="btn btn--line" data-make-days="3">3 days</button><button type="button" class="btn btn--line" data-make-days="7">7 days</button><button type="button" class="btn btn--line" data-make-days="14">14 days</button><button type="button" class="btn btn--line" data-make-days="30">30 days</button>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="frame band" aria-labelledby="book-h">
+        <div class="section-head">
+          <p class="eyebrow">the phrase book</p>
+          <h2 id="book-h">Out of the box</h2>
+          <p class="section-note">
+            Each phrase opens one thing. The note under it says exactly what happens, because a page
+            cannot put your phone into another app’s voice mode; it can only open the app.
+          </p>
+        </div>
+        <ul class="phrases">
+          <li class="phrase" data-target="gpt">
+    <div class="phrase-say">
+      <span class="phrase-text">“Hey GPT”</span>
+      <span class="mono phrase-name">opens ChatGPT</span>
+    </div>
+    <p class="phrase-note">Opens the ChatGPT app when it is installed, otherwise chatgpt.com. Voice mode is one tap from there; ChatGPT publishes no link that starts it directly.</p>
+    <p class="phrase-actions">
+      <a class="btn btn--line" href="go/gpt/" data-go="gpt">Open ChatGPT</a>
+    </p>
+    <details class="howto">
+    <summary class="mono">make it work with the screen locked</summary>
+    <div class="howto-body">
+      <p>
+        A web page cannot listen while your phone is in your pocket; only Siri and Google Assistant
+        can. So give them the phrase and point it at this link:
+      </p>
+      <p class="mono howto-url"><code>https://pflantzdog27.github.io/hey-test/go/gpt</code></p>
+      <ol>
+        <li>
+          <strong>iPhone.</strong> Shortcuts → <em>+</em> → name it <em>Hey GPT</em> → add the
+          action <em>Open URLs</em> and paste the link. Then say “Siri, Hey GPT”.
+        </li>
+        <li>
+          <strong>Android.</strong> Google Assistant → Routines → <em>New</em> → starter
+          <em>When I say “Hey GPT”</em> → add the action <em>Try adding your own</em> and type
+          <em>open https://pflantzdog27.github.io/hey-test/go/gpt</em>.
+        </li>
+      </ol>
+    </div>
+  </details>
+  </li><li class="phrase" data-target="claude">
+    <div class="phrase-say">
+      <span class="phrase-text">“Hey Claude”</span>
+      <span class="mono phrase-name">opens Claude</span>
+    </div>
+    <p class="phrase-note">Opens a new Claude chat. From a Siri shortcut this lands in the Claude app; from this page on an iPhone it opens claude.ai in Safari, where you are already signed in.</p>
+    <p class="phrase-actions">
+      <a class="btn btn--line" href="go/claude/" data-go="claude">Open Claude</a>
+    </p>
+    <details class="howto">
+    <summary class="mono">make it work with the screen locked</summary>
+    <div class="howto-body">
+      <p>
+        A web page cannot listen while your phone is in your pocket; only Siri and Google Assistant
+        can. So give them the phrase and point it at this link:
+      </p>
+      <p class="mono howto-url"><code>https://pflantzdog27.github.io/hey-test/go/claude</code></p>
+      <ol>
+        <li>
+          <strong>iPhone.</strong> Shortcuts → <em>+</em> → name it <em>Hey Claude</em> → add the
+          action <em>Open URLs</em> and paste the link. Then say “Siri, Hey Claude”.
+        </li>
+        <li>
+          <strong>Android.</strong> Google Assistant → Routines → <em>New</em> → starter
+          <em>When I say “Hey Claude”</em> → add the action <em>Try adding your own</em> and type
+          <em>open https://pflantzdog27.github.io/hey-test/go/claude</em>.
+        </li>
+      </ol>
+    </div>
+  </details>
+  </li><li class="phrase" data-target="camera">
+    <div class="phrase-say">
+      <span class="phrase-text">“Hey Camera”</span>
+      <span class="mono phrase-name">opens Camera</span>
+    </div>
+    <p class="phrase-note">Opens the phone&#39;s camera. Phones only; a laptop has nowhere to send it.</p>
+    <p class="phrase-actions">
+      <a class="btn btn--line" href="go/camera/" data-go="camera">Open Camera</a>
+    </p>
+    <details class="howto">
+    <summary class="mono">make it work with the screen locked</summary>
+    <div class="howto-body">
+      <p>
+        A web page cannot listen while your phone is in your pocket; only Siri and Google Assistant
+        can. So give them the phrase and point it at this link:
+      </p>
+      <p class="mono howto-url"><code>https://pflantzdog27.github.io/hey-test/go/camera</code></p>
+      <ol>
+        <li>
+          <strong>iPhone.</strong> Shortcuts → <em>+</em> → name it <em>Hey Camera</em> → add the
+          action <em>Open URLs</em> and paste the link. Then say “Siri, Hey Camera”.
+        </li>
+        <li>
+          <strong>Android.</strong> Google Assistant → Routines → <em>New</em> → starter
+          <em>When I say “Hey Camera”</em> → add the action <em>Try adding your own</em> and type
+          <em>open https://pflantzdog27.github.io/hey-test/go/camera</em>.
+        </li>
+      </ol>
+    </div>
+  </details>
+  </li><li class="phrase" data-target="nyt">
+    <div class="phrase-say">
+      <span class="phrase-text">“Hey NYT”</span>
+      <span class="mono phrase-name">opens The New York Times</span>
+    </div>
+    <p class="phrase-note">Opens the Times app when it is installed, otherwise nytimes.com. Having articles read aloud is the app&#39;s own feature, not something this page can start.</p>
+    <p class="phrase-actions">
+      <a class="btn btn--line" href="go/nyt/" data-go="nyt">Open The New York Times</a>
+    </p>
+    <details class="howto">
+    <summary class="mono">make it work with the screen locked</summary>
+    <div class="howto-body">
+      <p>
+        A web page cannot listen while your phone is in your pocket; only Siri and Google Assistant
+        can. So give them the phrase and point it at this link:
+      </p>
+      <p class="mono howto-url"><code>https://pflantzdog27.github.io/hey-test/go/nyt</code></p>
+      <ol>
+        <li>
+          <strong>iPhone.</strong> Shortcuts → <em>+</em> → name it <em>Hey NYT</em> → add the
+          action <em>Open URLs</em> and paste the link. Then say “Siri, Hey NYT”.
+        </li>
+        <li>
+          <strong>Android.</strong> Google Assistant → Routines → <em>New</em> → starter
+          <em>When I say “Hey NYT”</em> → add the action <em>Try adding your own</em> and type
+          <em>open https://pflantzdog27.github.io/hey-test/go/nyt</em>.
+        </li>
+      </ol>
+    </div>
+  </details>
+  </li>
+          <li class="phrase phrase--maker" data-target="maker">
+            <div class="phrase-say">
+              <span class="phrase-text">“Hey Maker, …”</span>
+              <span class="mono phrase-name">makes an app</span>
+            </div>
+            <p class="phrase-note">
+              Say what you need after the phrase: “Hey Maker, make me something to help my son study,
+              I’ll upload some pictures.” You will be asked when it should delete itself.
+            </p>
+            <p class="phrase-actions"><a class="btn btn--line" href="make">Type it instead</a></p>
+            <details class="howto">
+    <summary class="mono">make it work with the screen locked</summary>
+    <div class="howto-body">
+      <p>
+        A web page cannot listen while your phone is in your pocket; only Siri and Google Assistant
+        can. So give them the phrase and point it at this link:
+      </p>
+      <p class="mono howto-url"><code>https://pflantzdog27.github.io/hey-test/make</code></p>
+      <ol>
+        <li>
+          <strong>iPhone.</strong> Shortcuts → <em>+</em> → name it <em>Maker</em> → add the
+          action <em>Open URLs</em> and paste the link. Then say “Siri, Maker”.
+        </li>
+        <li>
+          <strong>Android.</strong> Google Assistant → Routines → <em>New</em> → starter
+          <em>When I say “Maker”</em> → add the action <em>Try adding your own</em> and type
+          <em>open https://pflantzdog27.github.io/hey-test/make</em>.
+        </li>
+      </ol>
+    </div>
+  </details>
+          </li>
+        </ul>
+      </section>
+
+      <section class="frame band" aria-labelledby="mine-h" data-personal>
+        <div class="section-head">
+          <p class="eyebrow">yours</p>
+          <h2 id="mine-h">Your own phrases</h2>
+          <p class="section-note">
+            Any phrase, any link. “Hey Maps” to a maps link, “Hey Bedtime” to a playlist. They are
+            kept in this browser only and are never sent anywhere.
+          </p>
+        </div>
+        <ul class="phrases phrases--personal" data-personal-list>
+          <li class="empty mono" data-personal-empty>
+            Adding a phrase needs JavaScript, because the list lives in your browser.
+          </li>
+        </ul>
+        <form class="personal-form" data-personal-form hidden>
+          <label class="field">
+            <span class="field-label mono">phrase</span>
+            <input name="phrase" type="text" maxlength="40" required placeholder="Hey Maps" />
+          </label>
+          <label class="field">
+            <span class="field-label mono">opens</span>
+            <input name="url" type="url" maxlength="500" required placeholder="https://maps.apple.com/" inputmode="url" />
+          </label>
+          <p class="form-actions"><button type="submit" class="btn btn--line">Add phrase</button></p>
+        </form>
+      </section>
+
+      <section class="frame band" aria-labelledby="make-h" id="make">
+        <div class="section-head">
+          <p class="eyebrow">hey maker</p>
+          <h2 id="make-h">Make an app</h2>
+          <p class="section-note">
+            Describe it in a sentence. You get one page with the pieces it needs — cards, a checklist,
+            a timer, photo slots — a link to open it, and a phrase to open it by voice. On the day you
+            pick, it deletes itself.
+          </p>
+        </div>
+        <form class="make-form" method="get" action="make" data-make-form>
+    <label class="field">
+      <span class="field-label mono">what should it do?</span>
+      <textarea name="brief" rows="4" maxlength="600" required
+        placeholder="help my son study fractions, I'll upload some pictures of his worksheet" data-make-brief></textarea>
+    </label>
+    <fieldset class="field days">
+      <legend class="field-label mono">delete it in</legend>
+      <div class="days-row">
+        <label class="day">
+            <input type="radio" name="days" value="3"  />
+            <span>3 days</span>
+          </label><label class="day">
+            <input type="radio" name="days" value="7" checked />
+            <span>7 days</span>
+          </label><label class="day">
+            <input type="radio" name="days" value="14"  />
+            <span>14 days</span>
+          </label><label class="day">
+            <input type="radio" name="days" value="30"  />
+            <span>30 days</span>
+          </label>
+      </div>
+    </fieldset>
+    <p class="form-actions">
+      <button type="submit" class="btn btn--solid">Make it</button>
+      <span class="mono form-note">One page, no account, gone on the day you picked.</span>
+    </p>
+  </form>
+        <div class="my-apps" data-my-apps hidden>
+          <h3 class="mono">Made on this device</h3>
+          <ul data-my-apps-list></ul>
+        </div>
+      </section>
+    </main>
+      <footer class="colophon">
+    <div class="frame colophon-inner">
+      <span class="c-mark">hey<span class="c-mark-tag">·&nbsp;the lab</span></span>
+      <span>your phrases stay in your browser · made apps delete themselves · nothing is uploaded</span>
+      <span class="c-links">
+        <a href="how">how it works</a> &nbsp;·&nbsp; <a href="https://github.com/pflantzdog27/hey-test">llms.txt</a> &nbsp;·&nbsp;
+        <a href="https://github.com/pflantzdog27/hey-test">api</a> &nbsp;·&nbsp; <a href="https://github.com/pflantzdog27/hey-test">mcp</a> &nbsp;·&nbsp;
+        <a href="https://pflantzer.com">the lab</a>
+      </span>
+    </div>
+  </footer>
+      <script type="application/json" id="hey-data">{"targets":[{"slug":"gpt","name":"ChatGPT","phrase":"Hey GPT","aliases":["gpt","g p t","chat gpt","chatgpt","chat g p t","jpt"],"web":"https://chatgpt.com/","ios":"chatgpt://","android":"https://chatgpt.com/"},{"slug":"claude","name":"Claude","phrase":"Hey Claude","aliases":["claude","claud","clod","clawed","cloud","klaud"],"web":"https://claude.ai/new","ios":"https://claude.ai/new","android":"https://claude.ai/new"},{"slug":"camera","name":"Camera","phrase":"Hey Camera","aliases":["camera","cam","photo","take a picture","take a photo"],"web":null,"ios":"camera://","android":"intent:#Intent;action=android.media.action.STILL_IMAGE_CAMERA;end"},{"slug":"nyt","name":"The New York Times","phrase":"Hey NYT","aliases":["nyt","n y t","times","new york times","the times","nytimes","and why tea"],"web":"https://www.nytimes.com/","ios":"nytimes://","android":"https://www.nytimes.com/"}],"maker":{"phrase":"Hey Maker","aliases":["maker","make her","baker","makeup","make a","make me","maker app"]}}</script>
+    
+</body>
+</html>

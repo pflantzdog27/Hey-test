@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Hey works</title>
+<meta name="description" content="What a web page can and cannot do with your voice, and the three ways to use this one.">
+<link rel="canonical" href="https://pflantzdog27.github.io/hey-test/how">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="How Hey works">
+<meta property="og:description" content="What a web page can and cannot do with your voice, and the three ways to use this one.">
+<meta property="og:url" content="https://pflantzdog27.github.io/hey-test/how">
+
+<meta name="twitter:card" content="summary">
+
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1c211d">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f2ea">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<script>/* Runs before first paint so a returning visitor never sees the wrong theme
+   flash. Kept deliberately tiny — its SHA-256 is baked into the CSP at build
+   time, so every byte here is load-bearing. */
+try{var t=localStorage.getItem('lab.theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&amp;family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap">
+<link rel="stylesheet" href="assets/hey.b710f0da8b.css">
+<script src="assets/hey.450ac1e7c8.js" defer></script>
+
+<link rel="manifest" href="manifest.webmanifest" />
+</head>
+<body>
+
+      <a class="skip-link" href="#main">Skip to content</a>
+      <header class="site-nav">
+    <div class="frame nav-inner">
+      <a href="./" class="nav-mark">
+        <span class="nav-mark-name">hey</span
+        ><span class="nav-mark-cursor" aria-hidden="true"></span>
+        <span class="nav-mark-tag">say the word</span>
+      </a>
+      <nav class="nav-links" aria-label="Site">
+        <a href="./" class="nav-link" 
+      >listen</a
+    > <a href="make" class="nav-link" 
+      >make</a
+    > <a href="how" class="nav-link" aria-current="page"
+      >how</a
+    >
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle color theme">
+          lights
+        </button>
+      </nav>
+    </div>
+  </header>
+      <main id="main"><div class="frame"><p class="notice mono" role="status">Test copy on GitHub Pages. The listener and phrases are the real code. The maker is switched off here because it needs the server; "Hey Maker" shows what it heard and stops.</p></div>
+      <section class="frame hero hero--short">
+        <p class="eyebrow">how it works</p>
+        <h1 class="hero-title">What a page can hear.</h1>
+      </section>
+      <section class="frame band band--first prose how">
+        <h2>The honest part first</h2>
+        <p>
+          Your phone’s always-on wake word belongs to Siri or Google Assistant. No web page, this one
+          included, can listen while the screen is locked or while you are in another app. “Hey
+          Siri, open Claude” already works today without any of this.
+        </p>
+        <p>What this page adds is three things.</p>
+
+        <h2>1. A listener, while it is open</h2>
+        <p>
+          Tap the microphone and talk. Keep the page open on the counter, in the car mount, on the
+          desk, and “Hey GPT” opens ChatGPT, “Hey NYT” opens the Times, “Hey Maker, …” makes an
+          app. Recognition is the browser’s own; nothing you say is sent to this site.
+        </p>
+
+        <h2>2. Links a shortcut can open</h2>
+        <p>
+          Every phrase has a link, <code class="mono">https://pflantzdog27.github.io/hey-test/go/claude</code> and so on, that sends
+          a phone to the right place. Give that link to a Siri shortcut or an Assistant routine named
+          after the phrase and the phrase works with the screen locked. Each phrase on the front page
+          has the steps.
+        </p>
+
+        <h2>3. A maker</h2>
+        <p>
+          “Hey Maker, make me something to help my son study, I’ll upload some pictures.” The
+          sentence goes to a model that picks from a fixed set of pieces (cards, checklist, timer,
+          prompts, photo slots) and fills them in. It cannot write code or markup. You are asked
+          whether to delete the result in 3, 7, 14 or 30 days, and on that day the record simply
+          stops existing. With the model unavailable you get the standard kit, labelled as such.
+        </p>
+        <p>
+          With the screen locked: a Siri shortcut named <em>Maker</em> with <em>Dictate text</em>
+          followed by <em>Open URLs</em> pointed at
+          <code class="mono">https://pflantzdog27.github.io/hey-test/make?brief=[Dictated Text]</code> opens the form with your
+          sentence filled in.
+        </p>
+
+        <h2>Where things live</h2>
+        <ul>
+          <li>Your own phrases: in this browser’s storage. Never sent anywhere.</li>
+          <li>Pictures you add to a made app: in this browser’s storage. Never uploaded.</li>
+          <li>Made apps: on this site, under an unguessable link, until the day you picked.</li>
+          <li>Who can change a made app: the browser that made it, via a cookie, or whoever holds the key the API returned.</li>
+        </ul>
+
+        <h2>For agents</h2>
+        <p>
+          Everything on this page is callable: <a href="https://github.com/pflantzdog27/hey-test">/api</a> for JSON,
+          <a href="https://github.com/pflantzdog27/hey-test">/mcp</a> for tools, <a href="https://github.com/pflantzdog27/hey-test">/llms.txt</a> for the map. An agent
+          can parse a phrase, make an app, set its expiry and delete it, exactly as a person can.
+        </p>
+      </section>
+    </main>
+      <footer class="colophon">
+    <div class="frame colophon-inner">
+      <span class="c-mark">hey<span class="c-mark-tag">·&nbsp;the lab</span></span>
+      <span>your phrases stay in your browser · made apps delete themselves · nothing is uploaded</span>
+      <span class="c-links">
+        <a href="how">how it works</a> &nbsp;·&nbsp; <a href="https://github.com/pflantzdog27/hey-test">llms.txt</a> &nbsp;·&nbsp;
+        <a href="https://github.com/pflantzdog27/hey-test">api</a> &nbsp;·&nbsp; <a href="https://github.com/pflantzdog27/hey-test">mcp</a> &nbsp;·&nbsp;
+        <a href="https://pflantzer.com">the lab</a>
+      </span>
+    </div>
+  </footer>
+      
+    
+</body>
+</html>

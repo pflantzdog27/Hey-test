@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hey Maker — make an app</title>
+<meta name="description" content="Describe a small app in a sentence and get one that deletes itself on the day you pick.">
+<link rel="canonical" href="https://pflantzdog27.github.io/hey-test/make">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hey Maker — make an app">
+<meta property="og:description" content="Describe a small app in a sentence and get one that deletes itself on the day you pick.">
+<meta property="og:url" content="https://pflantzdog27.github.io/hey-test/make">
+
+<meta name="twitter:card" content="summary">
+
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1c211d">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f2ea">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<script>/* Runs before first paint so a returning visitor never sees the wrong theme
+   flash. Kept deliberately tiny — its SHA-256 is baked into the CSP at build
+   time, so every byte here is load-bearing. */
+try{var t=localStorage.getItem('lab.theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&amp;family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap">
+<link rel="stylesheet" href="assets/hey.b710f0da8b.css">
+<script src="assets/hey.450ac1e7c8.js" defer></script>
+
+<link rel="manifest" href="manifest.webmanifest" />
+</head>
+<body>
+
+      <a class="skip-link" href="#main">Skip to content</a>
+      <header class="site-nav">
+    <div class="frame nav-inner">
+      <a href="./" class="nav-mark">
+        <span class="nav-mark-name">hey</span
+        ><span class="nav-mark-cursor" aria-hidden="true"></span>
+        <span class="nav-mark-tag">say the word</span>
+      </a>
+      <nav class="nav-links" aria-label="Site">
+        <a href="./" class="nav-link" 
+      >listen</a
+    > <a href="make" class="nav-link" aria-current="page"
+      >make</a
+    > <a href="how" class="nav-link" 
+      >how</a
+    >
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle color theme">
+          lights
+        </button>
+      </nav>
+    </div>
+  </header>
+      <main id="main"><div class="frame"><p class="notice mono" role="status">Test copy on GitHub Pages. The listener and phrases are the real code. The maker is switched off here because it needs the server; "Hey Maker" shows what it heard and stops.</p></div>
+      <section class="frame hero hero--short">
+        <p class="eyebrow">hey maker</p>
+        <h1 class="hero-title">Make an app.</h1>
+        <p class="hero-lede">
+          One sentence in, one page out: the pieces it needs, a link, a phrase to open it by voice,
+          and a day it deletes itself.
+        </p>
+      </section>
+      <section class="frame band band--first">
+        
+        <form class="make-form" method="get" action="make" data-make-form>
+    <label class="field">
+      <span class="field-label mono">what should it do?</span>
+      <textarea name="brief" rows="4" maxlength="600" required
+        placeholder="help my son study fractions, I'll upload some pictures of his worksheet" data-make-brief></textarea>
+    </label>
+    <fieldset class="field days">
+      <legend class="field-label mono">delete it in</legend>
+      <div class="days-row">
+        <label class="day">
+            <input type="radio" name="days" value="3"  />
+            <span>3 days</span>
+          </label><label class="day">
+            <input type="radio" name="days" value="7" checked />
+            <span>7 days</span>
+          </label><label class="day">
+            <input type="radio" name="days" value="14"  />
+            <span>14 days</span>
+          </label><label class="day">
+            <input type="radio" name="days" value="30"  />
+            <span>30 days</span>
+          </label>
+      </div>
+    </fieldset>
+    <p class="form-actions">
+      <button type="submit" class="btn btn--solid">Make it</button>
+      <span class="mono form-note">One page, no account, gone on the day you picked.</span>
+    </p>
+  </form>
+      </section>
+      <section class="frame band">
+        <div class="section-head">
+          <p class="eyebrow">what it can build from</p>
+          <h2>The pieces</h2>
+          <p class="section-note">
+            The model picks from these and fills them in. It cannot write code or markup, which is
+            why an app made from a sentence is safe to open.
+          </p>
+        </div>
+        <dl class="pieces">
+          <div class="piece"><dt class="mono">prose</dt><dd>A sentence or two in your own voice: how to use this app, or what to do first. Connective tissue, not the content.</dd></div><div class="piece"><dt class="mono">note</dt><dd>A short aside. Use `warn` to say something the brief asked for that this app cannot do, or that you had to guess at.</dd></div><div class="piece"><dt class="mono">checklist</dt><dd>Tick-boxes that stay ticked on the device. Use for a study routine, a packing list, steps to do in order, or anything that gets done and checked off.</dd></div><div class="piece"><dt class="mono">flashcards</dt><dd>Question on the front, answer on the back, tap to flip. The right block whenever the brief involves studying, memorising, quizzing, vocabulary, dates, formulas or facts. Write real cards from what the brief says; if the brief gives no material, write starter cards about how to study the subject and say so in a note.</dd></div><div class="piece"><dt class="mono">prompts</dt><dd>Open questions to ask out loud — for a parent quizzing a child, a practice interview, or rehearsing an explanation. Use when the point is talking it through rather than recalling a fact.</dd></div><div class="piece"><dt class="mono">timer</dt><dd>A countdown with a start button. Use for focused study blocks, timed practice, or a break. Between 1 and 90 minutes.</dd></div><div class="piece"><dt class="mono">photos</dt><dd>Slots for pictures the person will take or upload: the textbook page, the worksheet, the whiteboard. Include this whenever the brief mentions pictures, photos, uploads, pages or notes to capture. Pictures stay on the device; say what to photograph in `note`.</dd></div>
+        </dl>
+      </section>
+    </main>
+      <footer class="colophon">
+    <div class="frame colophon-inner">
+      <span class="c-mark">hey<span class="c-mark-tag">·&nbsp;the lab</span></span>
+      <span>your phrases stay in your browser · made apps delete themselves · nothing is uploaded</span>
+      <span class="c-links">
+        <a href="how">how it works</a> &nbsp;·&nbsp; <a href="https://github.com/pflantzdog27/hey-test">llms.txt</a> &nbsp;·&nbsp;
+        <a href="https://github.com/pflantzdog27/hey-test">api</a> &nbsp;·&nbsp; <a href="https://github.com/pflantzdog27/hey-test">mcp</a> &nbsp;·&nbsp;
+        <a href="https://pflantzer.com">the lab</a>
+      </span>
+    </div>
+  </footer>
+      
+    
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var brief = q.get('brief') || '';
+  var days = q.get('days');
+  var box = document.querySelector('[data-make-brief]');
+  if (box && brief) box.value = brief;
+  if (days) {
+    var r = document.querySelector('input[name="days"][value="' + days + '"]');
+    if (r) r.checked = true;
+  }
+  if (brief || days) {
+    var p = document.createElement('p');
+    p.className = 'notice mono';
+    p.setAttribute('role', 'status');
+    p.textContent = 'Heard: "' + brief + '"' + (days ? ', delete in ' + days + ' days' : '') +
+      '. On the real site this would now make the app.';
+    var form = document.querySelector('[data-make-form]');
+    if (form) form.parentNode.insertBefore(p, form);
+  }
+})();
+</script>
+</body>
+</html>
